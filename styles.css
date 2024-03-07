@@ -78,7 +78,6 @@ section{
   min-height: 400px;
   padding: 100px 20px;
 }
-/* navbar */
 .navbar{
   width: 100%;
   height: 60px;
@@ -238,7 +237,6 @@ section[id="aboutme"] >p{
       background-position: 0%;
  }
 }
-/* layers */
 .blue{
   background: #3c31dd;
 }
@@ -301,8 +299,6 @@ section[id="aboutme"] >p{
 .flip {
   transform: rotateY(180deg);
 }
-
-
 /* cards */
 #cards {
   display: flex;
@@ -461,7 +457,6 @@ i {
       background-position: -200% center;
  }
 }
-/* tiles animation */
 .portfolio {
   animation: background-pan 10s linear infinite;
   background: linear-gradient( to right, var(--g1), var(--g2), var(--g1) );
@@ -526,7 +521,7 @@ i {
   font-size: 1.5em;
   line-height: 0.9em;
 }
-/* scroller */
+
 .circle {
   --circle-size: 40px;
   position: fixed;
@@ -613,4 +608,21 @@ i {
   to {
     transform: translate(calc(-50% - 0.5rem));
   }
+}
+
+button{
+  width: 100%;
+  color: #fff;
+  border: none;
+  outline: 1px solid #fff;
+  padding: 11px 0px;
+  font-size: 0.9rem;
+  margin-bottom: 13px;
+  background: rgba(255, 255, 255, 0.113);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+button:hover{
+  background: rgba(255, 255, 255, 0.272);
 }
