@@ -609,6 +609,9 @@ i {
     transform: translate(calc(-50% - 0.5rem));
   }
 }
+section[id="kontakt"]{
+  text-align: center;
+}
 
 button{
   width: 100%;
