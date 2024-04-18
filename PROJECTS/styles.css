@@ -1,4 +1,5 @@
 body {
+    
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
       "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
@@ -8,6 +9,11 @@ body {
     background-color: rgb(22, 20, 24);
     color: #eee;
     user-select: none;
+    overflow-x: hidden;
+    scrollbar-color: none;
+  }
+  body::-webkit-scrollbar {
+    display: none;
   }
   .title{
     
@@ -146,6 +152,7 @@ body {
   }
   
   .bg{
+    overflow: hidden;
     position: fixed;
     top: 50%;
     left: 50%;
@@ -154,4 +161,42 @@ body {
       font-size: 20rem;
       filter: opacity(0.5);
     }
+  }
+  
+
+  button{
+    width: 50%;
+    color: #fff;
+    border: none;
+    outline: 1px solid #fff;
+    padding: 11px 0px;
+    font-size: 0.9rem;
+    margin-bottom: 13px;
+    background: rgba(255, 255, 255, 0.113);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+    
+  }
+  button:hover{
+    background: rgba(255, 255, 255, 0.272);
+  }
+
+  .footer{
+    overflow: hidden;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+    color: #a89ec9;
+    a{
+      color: #ee83e5;
+      text-decoration: none;
+    }
+  }
+
+  .active{
+    background-color: gray;
   }
