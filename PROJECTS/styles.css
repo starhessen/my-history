@@ -198,5 +198,5 @@ body {
   }
 
   .active{
-    background-color: gray;
+    filter: drop-shadow(0 0 10px #ee83e5);
   }
